@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Creating Tool</title>
+    <link rel="stylesheet" href="styled.css">
+</head>
+<body>
+    <h1 style="font-size: 2.5em;">Design Shapes</h1>
+    <div class="canvas-container">
+        <div id="canvas" class="canvas">
+            <!-- Initial dots -->
+            <div class="dot" style="left: 50px; top: 50px;"></div>
+            <div class="dot" style="left: 150px; top: 50px;"></div>
+            <div class="dot" style="left: 150px; top: 150px;"></div>
+            <div class="dot" style="left: 50px; top: 150px;"></div>
+        </div>
+        <svg id="shape-svg" class="shape-svg"></svg>
+    </div>
+    <div class="controls">
+        <div id="shadow-toggle"></div>
+        <button id="generate-code">Generate Code</button>
+        <button id="add-dot">Add Dot</button>
+    </div>
+    <div class="code-output" id="code-output">
+        <div class="code-box" id="html-code-box" style="display: none;">
+            <h3>Generated HTML:</h3>
+            <button id="copy-html">Copy HTML</button>
+            <pre id="html-code"></pre>
+        </div>
+        <div class="code-box" id="css-code-box" style="display: none;">
+            <h3>Generated CSS:</h3>
+            <button id="copy-css">Copy CSS</button>
+            <pre id="css-code"></pre>
+        </div>
+    </div>
+
+    <script src="scriptb.js"></script>
+</body>
+</html>
